@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Client from 'client';
+import client from './Client';
 import './App.css';
 
 const [post, setPost] = useState([]);
