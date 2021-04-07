@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Client from './Client';
+import Client from './client';
 // import { createClient } from 'contentful';
 
 // import useContentfulData from "./useContentfulData";
@@ -19,8 +19,7 @@ function App() {
           .catch(() => console.log("error"))
     }, [])
   console.log(post)
-  
-  
+
   return (
       <div className="App">
         <header>
@@ -30,13 +29,18 @@ function App() {
         </header>
 
         <main>
-          <div>
+          <div className="App_post">
           {isLoading
           ? "loading..."
           : post.map(({ fields }, index) => (
             <div key={index}>
-              <div>{fields.sort}</div>
-              <div>{fields.origin}</div>
+              <div className="App_post_prop">{fields.sort}</div>
+              {/* Image */}
+              <img src={fields.image?.fields.file.url} alt={fields.sort} width="200"/>
+              {/* Origin */}
+              <div><span className="App_post_prop">Origin: </span>{fields.origin}</div>
+              {/* Description */}
+              <div><span className="App_post_prop">Description: </span>{fields.origin}</div>
             </div>
             ))
           }

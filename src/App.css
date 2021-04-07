@@ -2,7 +2,24 @@
   text-align: center;
 }
 
-.App-logo {
+.App_post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+  max-width: 50rem;
+  margin: auto;
+  text-align: center;
+}
+
+.App_post_prop {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
