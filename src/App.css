@@ -1,5 +1,13 @@
+.App_bg {
+  background-image: url(https://riliv.co/rilivstory/wp-content/uploads/2018/10/charles-duck-unitas-505942-unsplash-800x533.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .App {
   text-align: center;
+  color: rgb(51, 36, 36);
 }
 
 .App_post {
@@ -17,7 +25,6 @@
   font-weight: bold;
   margin-top: 1rem;
 }
-
 
 /* .App-logo {
   height: 40vmin;
