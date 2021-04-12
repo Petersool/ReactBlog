@@ -3,11 +3,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
 }
 
 .App {
   text-align: center;
   color: rgb(51, 36, 36);
+ 
+}
+
+header {
+  padding: 2rem;
 }
 
 .App_post {
@@ -17,46 +23,43 @@
   grid-column-gap: 2rem;
   grid-row-gap: 5rem;
   max-width: 50rem;
-  margin: auto;
+  margin: 1rem auto;
   text-align: center;
+}
+
+.App_post_image{
+  overflow: hidden;
+  max-height: 10rem;
+  border: 0.5rem;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.App_post_image:hover {
+  transition: 0.60s;
+  -webkit-transition: 0.60s;
+  -moz-transition: 0.60s;
+  -ms-transition: 0.60s;
+  -o-transition: 0.60s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .App_post_prop {
   font-weight: bold;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-color {
+  background-color: rgb(88, 11, 28);
+  border-color: rgb(88, 11, 28);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-color:hover {
+  background-color: rgb(63, 0, 15);
+  border-color: rgb(63, 0, 15);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
